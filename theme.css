@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    background-color: MediumSeaGreen;
+    font-family: verdana;
+    font-size: 180%;
+}
+
+h3 {
+    color: white;
+    background-color: DodgerBlue;
+    font-family: courier;
+    font-size: 150%;
+}
+
+p  {
+    color: white;
+    font-family: courier;
+    font-size: 120%;
+    border: 1px lavender;
+    padding: 20px;
+    margin: 20px;
+}
+
+a {
+    color: white;
+    font-size: 120%;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
