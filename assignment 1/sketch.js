@@ -1,7 +1,15 @@
+ /* Programming Basics: Section 2
+    Savion Mercedes 
+    smsmartkid@gmail.com
+    assignment 1 
+    beginner website
+ */
+
 function setup() {
   createCanvas(500, 500);
   background(0);
   noStroke();
+
 
   fill(100, 0, 0);
   ellipse(250, 240, 72, 72);
