@@ -141,7 +141,7 @@ function keyPressed()
 	}
 	else if(key == 'o' || key == 'O')
 	{
-		createCanvas(600, 600);
+		createCanvas(735, 735);
 	}
 	else if(key == 'p' || key == 'P')
 	{
