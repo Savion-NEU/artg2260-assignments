@@ -1,7 +1,7 @@
  /* Programming Basics: Section 2
     Savion Mercedes 
     smsmartkid@gmail.com
-    assignment 1 
+    assignment 1
     beginner website
  */
 var x;
