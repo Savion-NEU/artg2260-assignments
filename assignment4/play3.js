@@ -6,17 +6,18 @@ let score = 0;
 var rects = [];
 var numRects = 50;
 var cir;
+var img;
 
 function setup() {
 	framerate = 10;
 	createCanvas(600,600);
-
+img = loadImage("/artg2260-assignments/assignment4/drop.png")
 	for(i=0;i<numRects;i++){
-		r = new rectObj(random(width),random(-600, 0), random(10,30), random(10,30) ) // generate a rectObj
-		rects.push(r); //add it to the array.
+		r = new rectObj(random(width),random(-600, 0), random(10,30), random(10,30) ) // make the "drops"
+		rects.push(r); //add it to the array
 	}
 
-	cir = new circleObj(20);// create a new circle object
+	cir = new circleObj(20);// the player's icon
 	console.log(rects);
 }
 
@@ -82,7 +83,7 @@ function rectObj(x,y,w,h){
 		this.hit = collideRectCircle(this.x, this.y, this.w, this.h, obj.x, obj.y, obj.dia); //collide the cir object into this rectangle object.
 
 		if(this.hit){
-			//this.color = color(0) //set this rectangle to be black if it gets hit
+			//loss condition if a drop is hit
 		    
       gameState = 2;
     
